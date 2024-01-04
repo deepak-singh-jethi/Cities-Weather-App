@@ -120,5 +120,10 @@ function getClassName(condition) {
 // ! event listners
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  driverFun(input_city.value);
+
+  if (input_city.value) {
+    driverFun(input_city.value);
+  } else {
+    alert("Enter a city name Please!!");
+  }
 });
