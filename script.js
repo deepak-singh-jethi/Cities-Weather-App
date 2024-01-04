@@ -25,13 +25,13 @@ async function driverFun(city) {
     const existingCityIndex = citiesWeather.findIndex(
       (element) => element.city === city
     );
-
-    if (existingCityIndex !== -1) {
-      const weatherData = await fetchData(city);
+    const weatherData = await fetchData(city);
+    console.log(weatherData);
+    if (existingCityIndex !== -1 && weatherData !== undefined) {
+      console.log(weatherData);
       citiesWeather[existingCityIndex] = weatherData;
       alert("weather card already exist check the list");
-    } else {
-      const weatherData = await fetchData(city);
+    } else if (weatherData !== undefined) {
       citiesWeather.push(weatherData);
     }
 
