@@ -2,19 +2,20 @@ const form = document.querySelector("form");
 const apiKey = "898b0d89ce8af9ab3e462a6034f11ef1";
 const WatherclassName = {
   Thunderstorm: "fa-cloud-bolt",
-  Drizzle: "fa-solid fa-cloud-sun-rain",
+  Drizzle: "wi wi - day - sprinkle",
   Rain: "fa-solid fa-cloud-showers-water",
   Snow: "fa-solid fa-snowflake",
   Clear: "fa-solid fa-sun",
   Clouds: "fa-solid fa-cloud",
 
-  Mist: "fa-solid  fa-smog",
-  Dust: "fa-solid  fa-smog",
-  Haze: "fa-solid  fa-smog",
-  Smoke: "fa-solid  fa-smog",
-  Fog: "fa-solid  fa-smog",
+  Mist: "wi wi-day-fog",
+  Dust: "wi wi-dust",
+  Haze: "wi wi-day-haze",
+  Smoke: "wi wi-smoke",
+  Fog: "wi wi-day-fog",
   Tornado: "fa-solid fa-tornado",
 };
+
 const weatherInfoConatiner = document.querySelector("#weatherInfoConatiner");
 
 const citiesWeather = [];

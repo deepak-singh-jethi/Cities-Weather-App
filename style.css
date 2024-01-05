@@ -129,7 +129,7 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding:30px;
+    padding:20px;
     /* ! change @media */
    
 
@@ -200,7 +200,7 @@ button{
     .city {
       width: 250px;
       height: 150px;
-      padding: 20px;
+      padding: 14px;
     }
     .info1 h1 {
       font-size: 15px;
